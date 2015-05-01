@@ -1,0 +1,14 @@
+parameters:
+  kamran_xmlform.formparser.class: Kamran\XmlFormBundle\Base\XmlFormParser
+  kamran_xmlform.xmlform.class: Kamran\XmlFormBundle\Base\XmlForm
+
+services:
+
+  form_parser:
+    class: %kamran_xmlform.formparser.class%
+
+  xmlform:
+    class: %kamran_xmlform.xmlform.class%
+    arguments: [@form_parser]
+    tags:
+     - { name: kamran.xmlform, alias: xmlform }

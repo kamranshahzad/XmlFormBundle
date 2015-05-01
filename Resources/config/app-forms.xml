@@ -1,0 +1,53 @@
+<forms>
+
+	<form id="tagtype" name="tagtype_form" method="POST">
+		<config>
+			<default>
+				<data_class>Kamran\TagsBundle\Entity\Tags</data_class>
+			</default>
+			<vars>
+				<abc>yami</abc>
+			</vars>	
+		</config>
+		<fields>	
+			<name type="text" required="false" label="Tags Name"  >
+				<setting>
+					<multiple>false</multiple>
+					<expanded>false</expanded>
+					<empty_data></empty_data>
+				</setting>
+				<attri>
+					<class>hello</class>
+				</attri>	
+			</name>	
+			<type type="choice" childOf="name" required="false" label="Select Tag Type" >
+				<choices>
+					<item key="1">One</item>
+					<item key="2">88</item>
+					<item key="3">Three</item>
+				</choices>		
+			</type>	
+		</fields>
+		<all>
+			<attri>
+				<class>test abc hello</class>
+			</attri>	
+		</all>	
+	</form>
+
+	<form id="tagcategories">
+		<fields>
+			<name required="false" label="Tags Name"  />
+			<categories childOf="type" event="onChange()"  />
+			<type required="false" label="Select Tag Type"  />
+		</fields>	
+	</form>	
+	
+	<form id="testabc">
+		<fields>
+			<name required="false" label="Tags Name" />
+			<type required="false" label="Select Tag Type" />
+		</fields>	
+	</form>	
+
+</forms>

@@ -1,0 +1,4 @@
+test_annotation:
+    resource: "@KamranTestBundle/Controller"
+    type:     annotation
+
