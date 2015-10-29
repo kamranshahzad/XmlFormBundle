@@ -1,0 +1,22 @@
+{
+    "name": "kamran/xml-form-bundle",
+    "type": "symfony-bundle",
+    "description": "Build symfony2 forms using xml files",
+    "keywords": [ "xml forms", "symfony2 forms", "bundle" ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Kamran Shahzad",
+            "email": "bleak.unseen@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.4",
+        "sensio/framework-extra-bundle": "~3.0,>=3.0.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "XmlFormBundle\\": ""
+        }
+    }
+}
