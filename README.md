@@ -16,6 +16,7 @@ Alternatively this bundle can be used for building small forms directly in symfo
 This bundle is used by a SettingsBundle for building settings forms.
 [SettingsBundle](https://github.com/kamranshahzad/SettingBundle).
 
+![alt text](https://github.com/kamranshahzad/XmlFormBundle/tree/master/Resources/public/images/XmlForms.png "Taxonomy screenshot")
 
 
 ## Installation.
